@@ -3,19 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package laborator2;
+package animale;
 
 /**
  *
  * @author razvan
  */
-public class Laborator2 {
+public class Animale {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Caine Max = new Caine();
+
+        Max.nume = "Max";
+        Max.rasa = "Lup";
+        Max.varsta = 10;
+
+        Max.latra();
     }
-    
 }
+
