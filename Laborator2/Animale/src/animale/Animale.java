@@ -15,9 +15,10 @@ public class Animale {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // se creeaza 3 obiecte din clasa Caine, folosind 3 constructori diferiti
         Caine Max = new Caine();
         Caine Dora = new Caine("Dora", "Lup", 3);
+        Caine Rex = new Caine("Rex");
 
         Max.nume = "Max";
         Max.rasa = "Lup";
