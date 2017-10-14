@@ -12,6 +12,14 @@ public class Caine {
     String rasa;
     int varsta;
 //metoda
+    public Caine(){};
+    public Caine(String numele,String rasa,int varsta){
+        numele = nume;
+        this.rasa = rasa;
+        this.varsta=varsta;
+        System.out.println("Numele cainelui este "+nume+" rasa este "+rasa+ 
+                " si are "+varsta+" ani");
+    }
 
     public void latra() {
 

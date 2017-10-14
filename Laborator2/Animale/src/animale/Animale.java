@@ -17,6 +17,7 @@ public class Animale {
     public static void main(String[] args) {
         // TODO code application logic here
         Caine Max = new Caine();
+        Caine Dora = new Caine("Dora", "Lup", 3);
 
         Max.nume = "Max";
         Max.rasa = "Lup";
