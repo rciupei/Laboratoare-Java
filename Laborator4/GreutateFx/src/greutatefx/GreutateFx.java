@@ -98,15 +98,16 @@ public class GreutateFx extends Application {
         primaryStage.setTitle("Greutate");
         primaryStage.show();
     }
+
     public void calculGreutate() {
- double hh = Double.parseDouble(h.getText());
- double vv = Double.parseDouble(v.getText());
- double gg = 50. + 0.75 * (hh - 150.) + 0.25 * (vv - 20.);
- if (!s.isSelected()) {
- gg = gg * 0.9;
- }
- g.setText(String.valueOf(gg));
- } 
+        double hh = Double.parseDouble(h.getText());
+        double vv = Double.parseDouble(v.getText());
+        double gg = 50. + 0.75 * (hh - 150.) + 0.25 * (vv - 20.);
+        if (!s.isSelected()) {
+            gg = gg * 0.9;
+        }
+        g.setText(String.valueOf(gg));
+    }
 
     /**
      * @param args the command line arguments

@@ -58,6 +58,7 @@ public class SituatiiNou {
         denMaterie = citire.nextLine();
         System.out.println("\nNotele la " + denMaterie + ":");
 
+
         for (Cursant crsnt : c) {
             crsnt.afisezCursant();
             for (Nota nt : n) {
