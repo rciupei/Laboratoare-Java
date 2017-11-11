@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="444.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="judete.JudController">
+   <children>
+      <Label layoutX="105.0" layoutY="36.0" text="Informatii utile">
+         <font>
+            <Font name="Lucida Bright Demibold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="111.0" text="Judetul:" />
+      <ComboBox fx:id="jud" layoutX="126.0" layoutY="106.0" onAction="#afiseaza" prefWidth="150.0" />
+      <Label layoutX="39.0" layoutY="181.0" text="Suprafata" />
+      <Label layoutX="39.0" layoutY="245.0" text="Populatia" />
+      <Label layoutX="39.0" layoutY="289.0" text="Capitala" />
+      <Button fx:id="ies" layoutX="160.0" layoutY="355.0" mnemonicParsing="false" onAction="#iesire" text="Iesire" />
+      <TextField fx:id="supraf" layoutX="129.0" layoutY="176.0" />
+      <TextField fx:id="populatie" layoutX="129.0" layoutY="248.0" />
+      <TextField fx:id="capitala" layoutX="129.0" layoutY="284.0" />
+      <Label layoutX="312.0" layoutY="181.0" text="km2" />
+      <Label layoutX="309.0" layoutY="253.0" text="locuitori" />
+   </children>
+</AnchorPane>
