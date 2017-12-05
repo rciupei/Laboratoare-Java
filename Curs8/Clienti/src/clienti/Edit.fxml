@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="clienti.EditController">
+   <children>
+      <Label layoutX="90.0" layoutY="80.0" text="Nume" />
+      <Label layoutX="90.0" layoutY="143.0" text="Prenume" />
+      <Label layoutX="90.0" layoutY="202.0" text="E-mail" />
+      <TextField fx:id="nume" layoutX="262.0" layoutY="75.0" />
+      <TextField fx:id="prenume" layoutX="262.0" layoutY="138.0" />
+      <TextField fx:id="email" layoutX="262.0" layoutY="197.0" />
+      <Button layoutX="108.0" layoutY="327.0" mnemonicParsing="false" onAction="#editez" text="Editeaza" />
+      <Button layoutX="340.0" layoutY="327.0" mnemonicParsing="false" onAction="#abandon" text="Abandon" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="263.0" prefWidth="507.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="colab.AdaugController">
+   <children>
+      <Label layoutX="65.0" layoutY="33.0" text="Nume" />
+      <Label layoutX="65.0" layoutY="71.0" text="Prenume" />
+      <Label layoutX="65.0" layoutY="107.0" text="E-mail" />
+      <TextField fx:id="cnume" layoutX="191.0" layoutY="32.0" />
+      <TextField fx:id="cprenume" layoutX="193.0" layoutY="71.0" />
+      <TextField fx:id="cemail" layoutX="193.0" layoutY="102.0" />
+      <Button layoutX="73.0" layoutY="177.0" mnemonicParsing="false" onAction="#salveaza" text="Salveaza" />
+      <Button layoutX="277.0" layoutY="177.0" mnemonicParsing="false" onAction="#abandon" text="Abandon" />
+   </children>
+</AnchorPane>
