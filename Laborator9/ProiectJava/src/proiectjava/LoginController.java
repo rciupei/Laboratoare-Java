@@ -86,7 +86,8 @@ public class LoginController {
             rs = stm.executeQuery(cda);
 
             while (rs.next()) {
-                if (nume.equals(rs.getString("Nume")) && parola.equals(rs.getString("Parola"))) {
+                if (nume.equals(rs.getString("Nume")) && parola.equals(rs.getString("Parola")) 
+                        &&nume.length()>0 && parola.length()>0)  {
 
                     baza.incarcDoi();
 
