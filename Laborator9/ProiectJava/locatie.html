@@ -1,0 +1,16 @@
+<html>
+<head>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+function initialize(){var centruHarta = new google.maps.LatLng(48.86, 2.27);
+var optiuniHarta = {zoom: 14,center: centruHarta,mapTypeId: google.maps.MapTypeId.ROADMAP};
+var harta = new google.maps.Map(document.getElementById("map"), optiuniHarta);
+var optMarker = {position: centruHarta,map: harta,title: "Aici"};
+var marker = new google.maps.Marker(optMarker);
+}
+</script>
+</head>
+<body onload="initialize()">
+<div id="map" style="padding:0; margin: 0; width:272px; height:190px"></div>
+</body>
+</html>

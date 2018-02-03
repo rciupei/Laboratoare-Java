@@ -73,6 +73,10 @@ public class LoginController {
 
 
     }
+    
+    public void printare(){
+        System.out.println("print metoda");
+    }
 
     private void validare(String nume, String parola) {
         String cda = "select * from Utilizatori ";
@@ -90,10 +94,11 @@ public class LoginController {
                         &&nume.length()>0 && parola.length()>0)  {
 
                     baza.incarcDoi();
+                    
 
-                    System.out.println(rs.getInt("Id_util"));
+                    //System.out.println(rs.getInt("Id_util"));
                 } else {
-                    System.out.println(rs.getString("Nume"));
+                   // System.out.println(rs.getString("Nume"));
                     msg.setText("Utilizator sau parola incorecte");
                     msg.setTextFill(Color.web("red"));
 //                    System.out.println("inexistent");

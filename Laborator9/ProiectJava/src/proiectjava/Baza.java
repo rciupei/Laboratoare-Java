@@ -26,7 +26,8 @@ public class Baza extends Application {
 
             fereastra = primaryStage;
             fereastra.setTitle("Calatorii");
-            incarcLogin();
+//            incarcLogin();
+            incarcDoi();
             primaryStage.show();
         } catch (Exception ex) {
             ex.printStackTrace();

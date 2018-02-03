@@ -16,6 +16,8 @@ import javafx.scene.control.TextField;
 public class AdaugUtilController {
 
     Baza baza;
+    LoginController log = new LoginController();
+
     Connection cnx;
     Statement stmt;
 
@@ -80,12 +82,13 @@ public class AdaugUtilController {
             //ad.disableProperty();
             mesaj.setText("Utilizator adaugat");
             ad.setDisable(true);
-            
 
             //baza.incarcLogin();
         } else {
             mesaj.setText("Parolele sunt diferite");
+            log.printare();
             
+
         }
     }
 
